@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -Wno-format-zero-length  -shared -Wl,-soname,libgtest_main.so -o libgtest_main.so CMakeFiles/gtest_main.dir/src/gtest_main.cc.o  -Wl,-rpath,/home/rajat/502_lab/lab21/lab21_template-20241118T175751Z-001/lab21_template/lcm-1.4.0/build/test/gtest libgtest.so -lpthread 

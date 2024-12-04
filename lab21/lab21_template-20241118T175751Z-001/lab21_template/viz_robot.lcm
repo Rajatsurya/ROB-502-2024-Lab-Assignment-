@@ -1,0 +1,4 @@
+package lab21;
+struct viz_robot_t
+{
+}

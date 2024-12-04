@@ -1,0 +1,62 @@
+first branch from the repo
+after that go to the original repo and clone it (clone it in the folder Assignments/fa_2024)
+after that give access to fetch from main_stream git remote add upstream https://gitlab.eecs.umich.edu/jessisc/fa24_rob502.git
+git fetch upstream main - to fetch new home work
+git pull upstream main - this will pull the new homework
+git remote -v (this will tell which all branches the local repo is connected to)
+
+the output to this is as follows:
+origin	https://gitlab.eecs.umich.edu/rajatsm/fa24_rob502.git (fetch)
+origin	https://gitlab.eecs.umich.edu/rajatsm/fa24_rob502.git (push)
+upstream	https://gitlab.eecs.umich.edu/jessisc/fa24_rob502.git (fetch)
+upstream	https://gitlab.eecs.umich.edu/jessisc/fa24_rob502.git (push)
+
+cd to the place where you want to push to git
+To push to your brached repo do the following
+git add .
+git commit -m "give your commit message"(This will push it to the local repo)
+git push origin main (we will be pushing it to the origin branch and not the upstream branch )
+
+cd to the place where the repo was cloned 
+and then type git branch - this will give branch you are currently on 
+git fetch --all (this will fetch all the branches)
+to check if all the branches exist type : - git branch -r
+to change to the next branch type : - git checkout (branch_name)
+to switch back to the main branch once again type the command : -  git checkout main
+Now if there is a senario where we have to merge the branches then this is the command to use : - git merge (branch-name)
+Now if there is another branch and you want to merge this then it is a little complicated say we use the same command git merge (branch-name-2) that time a conflict occurs 
+and the conflict looks something like this 
+Auto-merging main.cpp
+CONFLICT (content): Merge conflict in main.cpp
+Automatic merge failed; fix conflicts and then commit the result.
+
+so now inorder to remove this conflict what we can do is go to vs code and there will a tiny options click on what you want to do that is keep both the merges keep one of them or remove both of them once that is done push your changes from your local repo to your git
+
+Run all these commands from the folder you want to make it as the Root Folder
+ git status (make sure no local repos are created)
+ git init (this command creates a remote repository)
+ git status
+ git add . (adds all the files that have been changed )
+ git commit -m "Initial commit"(give your own commit message)
+ git status
+ git remote add link_name (genrally its the origin) https://github.com/Rajatsurya/test.git(http link)
+ git remote -v(this shows the link you have just created using the above command)
+ git push --set-upstream (link_name)(its origin by default) master (use VS Code to do this)
+ git push (link_name)(its origin by default)(basically the name you gave in line 42) example command is (git push privateOnlineRepo)
+
+ say you created the local repo in a place you donot want to you can delete it using the command 
+ sudo rm -r .git
+
+after you delete it when you do git status you should get fatal: not a git repository (or any of the parent directories): .git
+
+say you have commited something in your local repo and you want to uncommit it use this command 
+git rm --cached (File_name)
+
+Now lets say you want to add something specific then we can use the command 
+git add (file_location/File_name)
+
+
+
+
+
+

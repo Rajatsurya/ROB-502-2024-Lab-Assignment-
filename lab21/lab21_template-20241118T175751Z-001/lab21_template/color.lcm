@@ -1,0 +1,4 @@
+package lab21;
+struct color_t
+{
+}
